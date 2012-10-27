@@ -1,4 +1,4 @@
-package bart.strategy;
+package bart.strategy.model;
 
 import bart.strategy.behavior.FlyBehavior;
 
@@ -25,10 +25,12 @@ public abstract class Duck {
         System.out.println(flyBehavior.flyString(getBehaviorPrefix()));
     }
 
+    //Another good candidate for delegation since implementation very well could change based on _type_ of duck
     public void quack() {
         System.out.println(getBehaviorPrefix() + "quacking!");
     }
 
+    //Another good candidate for delegation since implementation very well could change based on _type_ of duck
     public void swim() {
         System.out.println(getBehaviorPrefix() + "swimming!");
     }

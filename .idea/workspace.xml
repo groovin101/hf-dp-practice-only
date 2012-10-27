@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="04c8aab7-a1d1-4e09-9964-54d3cecb69fe" name="Default" comment="-- Introduced strategy pattern for fly behavior.&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/bart/strategy/behavior/FlyBehavior.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/bart/strategy/behavior/FlyNoWay.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/bart/strategy/behavior/FlyRegular.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/bart/strategy/behavior/FlyWithARocket.java" />
+    <list default="true" id="04c8aab7-a1d1-4e09-9964-54d3cecb69fe" name="Default" comment="-- Introduced strategy pattern for fly behavior. Also demonstrate runtime behavior change.&#10;">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/bart/strategy/Duck.java" afterPath="$PROJECT_DIR$/src/main/java/bart/strategy/Duck.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/bart/strategy/MallardDuck.java" afterPath="$PROJECT_DIR$/src/main/java/bart/strategy/MallardDuck.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/bart/strategy/MiniDuckSimulator.java" afterPath="$PROJECT_DIR$/src/main/java/bart/strategy/MiniDuckSimulator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/bart/strategy/RedheadDuck.java" afterPath="$PROJECT_DIR$/src/main/java/bart/strategy/RedheadDuck.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/bart/strategy/WoodenDuck.java" afterPath="$PROJECT_DIR$/src/main/java/bart/strategy/WoodenDuck.java" />
+      <change type="MOVED" beforePath="D:\home\bart\dev\headFirst\src\main\java\bart\strategy\Duck.java" afterPath="$PROJECT_DIR$/src/main/java/bart/strategy/model/Duck.java" />
+      <change type="MOVED" beforePath="D:\home\bart\dev\headFirst\src\main\java\bart\strategy\MallardDuck.java" afterPath="$PROJECT_DIR$/src/main/java/bart/strategy/model/MallardDuck.java" />
+      <change type="MOVED" beforePath="D:\home\bart\dev\headFirst\src\main\java\bart\strategy\RedheadDuck.java" afterPath="$PROJECT_DIR$/src/main/java/bart/strategy/model/RedheadDuck.java" />
+      <change type="MOVED" beforePath="D:\home\bart\dev\headFirst\src\main\java\bart\strategy\WoodenDuck.java" afterPath="$PROJECT_DIR$/src/main/java/bart/strategy/model/WoodenDuck.java" />
     </list>
     <ignored path="headFirst.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -70,19 +66,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Duck.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/bart/strategy/Duck.java">
+      <file leaf-file-name="Duck.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/bart/strategy/model/Duck.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="41" selection-start="506" selection-end="506" vertical-scroll-proportion="0.0">
+            <state line="27" column="111" selection-start="661" selection-end="661" vertical-scroll-proportion="0.76804125">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="WoodenDuck.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/bart/strategy/WoodenDuck.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/bart/strategy/model/WoodenDuck.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="30" selection-start="172" selection-end="172" vertical-scroll-proportion="0.0">
+            <state line="10" column="30" selection-start="178" selection-end="178" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -97,10 +93,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MiniDuckSimulator.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="MiniDuckSimulator.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/bart/strategy/MiniDuckSimulator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="27" selection-start="672" selection-end="672" vertical-scroll-proportion="0.3945869">
+            <state line="34" column="49" selection-start="1212" selection-end="1212" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -145,18 +141,18 @@
         </entry>
       </file>
       <file leaf-file-name="MallardDuck.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/bart/strategy/MallardDuck.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/bart/strategy/model/MallardDuck.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="8" selection-start="154" selection-end="187" vertical-scroll-proportion="0.0">
+            <state line="10" column="8" selection-start="160" selection-end="193" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="RedheadDuck.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/bart/strategy/RedheadDuck.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/bart/strategy/model/RedheadDuck.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="4" selection-start="194" selection-end="194" vertical-scroll-proportion="0.0">
+            <state line="12" column="0" selection-start="200" selection-end="200" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -188,6 +184,7 @@
         <option value="$PROJECT_DIR$/src/main/java/bart/strategy/behavior/FlyBehavior.java" />
         <option value="$PROJECT_DIR$/src/main/java/bart/strategy/behavior/FlyWithARocket.java" />
         <option value="$PROJECT_DIR$/src/main/java/bart/strategy/MiniDuckSimulator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/bart/strategy/model/Duck.java" />
       </list>
     </option>
   </component>
@@ -373,7 +370,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="behavior" />
+              <option name="myItemId" value="model" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -548,10 +545,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1216" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32934684" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37021717" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Phing Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -565,7 +562,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24986653" sideWeight="0.67065316" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24986653" sideWeight="0.62978286" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="JsTestDriver Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -600,7 +597,7 @@
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="-- Pre-strategy pattern implementation using inheritance (poorly).&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="-- Introduced strategy pattern for fly behavior. Also demonstrate runtime behavior change.&#10;" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -615,6 +612,7 @@
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="-- Test checkin from IDE" />
     <MESSAGE value="-- Pre-strategy pattern implementation using inheritance (poorly).&#10;" />
+    <MESSAGE value="-- Introduced strategy pattern for fly behavior. Also demonstrate runtime behavior change.&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -673,16 +671,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bart/strategy/MallardDuck.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/bart/strategy/model/MallardDuck.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="8" selection-start="154" selection-end="187" vertical-scroll-proportion="0.0">
+        <state line="10" column="8" selection-start="160" selection-end="193" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bart/strategy/RedheadDuck.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/bart/strategy/model/RedheadDuck.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="4" selection-start="194" selection-end="194" vertical-scroll-proportion="0.0">
+        <state line="12" column="0" selection-start="200" selection-end="200" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -694,9 +692,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bart/strategy/WoodenDuck.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/bart/strategy/model/WoodenDuck.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="30" selection-start="172" selection-end="172" vertical-scroll-proportion="0.0">
+        <state line="10" column="30" selection-start="178" selection-end="178" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -704,13 +702,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/bart/strategy/behavior/FlyRegular.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="55" selection-start="212" selection-end="212" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bart/strategy/Duck.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="41" selection-start="506" selection-end="506" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -731,10 +722,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/bart/strategy/MiniDuckSimulator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="27" selection-start="672" selection-end="672" vertical-scroll-proportion="0.3945869">
+        <state line="34" column="49" selection-start="1212" selection-end="1212" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/bart/strategy/model/Duck.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="111" selection-start="661" selection-end="661" vertical-scroll-proportion="0.76804125">
+          <folding />
         </state>
       </provider>
     </entry>

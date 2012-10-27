@@ -1,4 +1,4 @@
-package bart.strategy;
+package bart.strategy.model;
 
 import bart.strategy.behavior.FlyRegular;
 

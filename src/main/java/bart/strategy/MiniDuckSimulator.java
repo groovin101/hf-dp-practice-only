@@ -1,6 +1,10 @@
 package bart.strategy;
 
 import bart.strategy.behavior.FlyWithARocket;
+import bart.strategy.model.Duck;
+import bart.strategy.model.MallardDuck;
+import bart.strategy.model.RedheadDuck;
+import bart.strategy.model.WoodenDuck;
 
 import java.util.ArrayList;
 import java.util.List;
