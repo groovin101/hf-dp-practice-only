@@ -10,7 +10,7 @@ public abstract class Duck {
     }
 
     public void swim() {
-        System.out.println("Swim!");
+        System.out.println("Swim duck!");
     }
 
     public abstract void display();

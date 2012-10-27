@@ -1,4 +1,4 @@
-Chapter 1 - Strategy Pattern
+		Chapter 1 - Strategy Pattern
 --------------------------------------------------------
 java -cp ./classes headfirst.strategy.MiniDuckSimulator
 java -cp ./classes headfirst.strategy.MiniDuckSimulator1
