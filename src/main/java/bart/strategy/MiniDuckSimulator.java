@@ -1,5 +1,7 @@
 package bart.strategy;
 
+import bart.strategy.behavior.FlyWithARocket;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,8 +13,14 @@ public class MiniDuckSimulator {
             System.out.println("------------------------");
             duck.display();
             duck.fly();
+            if (duck.getClass().getSimpleName().equals("WoodenDuck")) {
+                System.out.println("To demonstrate runtime behavior change, let's strap a rocket to the wooden duck.");
+                duck.setFlyBehavior(new FlyWithARocket());
+                duck.fly();
+            }
             duck.quack();
             duck.swim();
+            System.out.println("------------------------");
         }
     }
 

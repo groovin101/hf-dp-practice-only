@@ -1,9 +1,15 @@
 package bart.strategy;
 
+import bart.strategy.behavior.FlyNoWay;
+
 /**
  *
  */
 public class WoodenDuck extends Duck {
+
+    public WoodenDuck() {
+        setFlyBehavior(new FlyNoWay());
+    }
 
     @Override
     public void display() {

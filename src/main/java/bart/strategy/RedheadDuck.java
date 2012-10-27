@@ -1,9 +1,15 @@
 package bart.strategy;
 
+import bart.strategy.behavior.FlyRegular;
+
 /**
  *
  */
 public class RedheadDuck extends Duck {
+
+    public RedheadDuck() {
+        setFlyBehavior(new FlyRegular());
+    }
 
     @Override
     public void display() {
