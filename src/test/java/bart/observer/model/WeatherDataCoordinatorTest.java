@@ -58,7 +58,7 @@ public class WeatherDataCoordinatorTest {
     private boolean observersInclude(String nameOfDevice, List<DisplayDevice> observers) {
         if (observers != null) {
             for (DisplayDevice device : observers) {
-                if (((DisplayDeviceNamed)device).getNameOfThisDevice().equals(nameOfDevice)) {
+                if (device.getName().equals(nameOfDevice)) {
                     return true;
                 }
             }
@@ -67,6 +67,11 @@ public class WeatherDataCoordinatorTest {
     }
 
     private DisplayDevice buildDisplayDeviceWithEmptyImplForTest(String nameOfDevice) {
-        return new DisplayDeviceNamedImpl(nameOfDevice);
+        return new DisplayDeviceGeneric(nameOfDevice) {
+            @Override
+            public void display() {
+                System.out.println("generic display implementation - we don't even display the weather!!");
+            }
+        };
     }
 }

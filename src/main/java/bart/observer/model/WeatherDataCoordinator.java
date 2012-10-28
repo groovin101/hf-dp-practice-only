@@ -36,7 +36,7 @@ public class WeatherDataCoordinator {
     public DisplayDevice getNamedObserver(String name) {
         if (observers != null) {
             for (DisplayDevice device : observers) {
-                if (device instanceof DisplayDeviceNamed && ((DisplayDeviceNamed)device).getNameOfThisDevice().equals(name)) {
+                if (device.getName().equals(name)) {
                     return device;
                 }
             }

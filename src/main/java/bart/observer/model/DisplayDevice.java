@@ -11,4 +11,5 @@ public interface DisplayDevice {
     public void display();
     public WeatherDataDetails getWeatherDataDetails();
     public void updateWeatherDetails(WeatherDataDetails details);
+    public String getName();
 }
