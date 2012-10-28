@@ -43,7 +43,7 @@ public class WeatherDataCoordinatorTest {
         weatherDataCoordinator.registerObserver(observingDevice);
         DisplayDevice deviceAfterBeingAddedAsObserver = weatherDataCoordinator.getNamedObserver("1");
         assertNotNull("Should not be null", deviceAfterBeingAddedAsObserver.getWeatherDataDetails());
-        assertEquals("Observer should have same vals as coordinator after being added", weatherDataCoordinator.getTempCurrent(), deviceAfterBeingAddedAsObserver.getWeatherDataDetails().getTempCurrent());
+        assertEquals("Observer should have same vals as coordinator after being added", weatherDataCoordinator.getWeatherDataDetails().getTempCurrent(), deviceAfterBeingAddedAsObserver.getWeatherDataDetails().getTempCurrent());
     }
 
     @Test

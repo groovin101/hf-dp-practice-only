@@ -5,7 +5,10 @@ import java.util.List;
 
 /**
  * Master object to track temp, humidity, and pressure coming from the weather station. Pushes this data to
- * individual displays.
+ * individual displays. This is the SUBJECT in the Subject/Observer relationship.
+ *
+ * Note that this could have used the built in (java6) Observable class.
+ * @see java.util.Observable
  */
 public class WeatherDataCoordinator {
 
@@ -41,14 +44,8 @@ public class WeatherDataCoordinator {
         return null;
     }
 
-    public double getTempCurrent() {
-        return weatherDataDetails.getTempCurrent();
-    }
-    public double getHumidity() {
-        return weatherDataDetails.getHumidity();
-    }
-    public double getPressureBarometric() {
-        return weatherDataDetails.getPressureBarometric();
+    public WeatherDataDetails getWeatherDataDetails() {
+        return weatherDataDetails;
     }
 
     public void updateData(WeatherDataDetails details) {

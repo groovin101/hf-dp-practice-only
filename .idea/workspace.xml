@@ -2,19 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04c8aab7-a1d1-4e09-9964-54d3cecb69fe" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_1_9_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/bart/observer/model/DisplayDeviceNamedImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/bart/observer/model/WeatherDataCoordinator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/bart/observer/model/WeatherDataDetails.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/bart/observer/model/WeatherDataCoordinatorTest.java" />
-      <change type="DELETED" beforePath="D:\home\bart\dev\headFirst\src\main\java\bart\observer\model\WeatherData.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\home\bart\dev\headFirst\src\test\java\bart\observer\model\WeatherDataTest.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/headFirst.iml" afterPath="$PROJECT_DIR$/headFirst.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/bart/observer/model/DisplayDevice.java" afterPath="$PROJECT_DIR$/src/main/java/bart/observer/model/DisplayDevice.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/bart/observer/model/WeatherDataCoordinator.java" afterPath="$PROJECT_DIR$/src/main/java/bart/observer/model/WeatherDataCoordinator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/bart/observer/model/WeatherDataCoordinatorTest.java" afterPath="$PROJECT_DIR$/src/test/java/bart/observer/model/WeatherDataCoordinatorTest.java" />
     </list>
     <ignored path="headFirst.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -76,7 +67,7 @@
       <file leaf-file-name="WeatherDataCoordinator.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/bart/observer/model/WeatherDataCoordinator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="51" selection-start="1757" selection-end="1757" vertical-scroll-proportion="0.0">
+            <state line="10" column="28" selection-start="380" selection-end="380" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -84,28 +75,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WeatherDataDetails.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/bart/observer/model/WeatherDataDetails.java">
+      <file leaf-file-name="Observable.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://D:/bin/java/jdk1.6.0_27/src.zip!/java/util/Observable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="474" selection-end="474" vertical-scroll-proportion="0.0">
+            <state line="44" column="13" selection-start="1870" selection-end="1870" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DisplayDevice.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Observer.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://D:/bin/java/jdk1.6.0_27/src.zip!/java/util/Observer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="19" selection-start="436" selection-end="444" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DisplayDevice.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/bart/observer/model/DisplayDevice.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="64" selection-start="221" selection-end="221" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CurrentConditionsDisplay.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/hf/observer/weather/CurrentConditionsDisplay.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="49" selection-start="80" selection-end="80" vertical-scroll-proportion="0.0">
+            <state line="10" column="1" selection-start="263" selection-end="263" vertical-scroll-proportion="0.22309712">
               <folding />
             </state>
           </provider>
@@ -120,15 +111,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WeatherDataCoordinatorTest.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/bart/observer/model/WeatherDataCoordinatorTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="48" selection-start="2279" selection-end="2279" vertical-scroll-proportion="0.92558986">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="DisplayDeviceNamedImpl.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/bart/observer/model/DisplayDeviceNamedImpl.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -138,28 +120,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReflectiveCallable.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.7/junit-4.7.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <file leaf-file-name="Observer.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hf/observer/weather/Observer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="40" selection-start="397" selection-end="397" vertical-scroll-proportion="-6.8">
+            <state line="2" column="17" selection-start="47" selection-end="47" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="WeatherData.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hf/observer/weather/WeatherData.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="21" selection-start="822" selection-end="822" vertical-scroll-proportion="0.0">
+            <state line="4" column="39" selection-start="90" selection-end="90" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FlyRegular.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/bart/strategy/behavior/FlyRegular.java">
+      <file leaf-file-name="StatisticsDisplay.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hf/observer/weather/StatisticsDisplay.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="50" selection-start="207" selection-end="207" vertical-scroll-proportion="0.0">
+            <state line="7" column="36" selection-start="249" selection-end="249" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Subject.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hf/observer/weather/Subject.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="17" selection-start="47" selection-end="47" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -191,10 +182,10 @@
         <option value="$PROJECT_DIR$/src/main/java/bart/observer/model/WeatherData.java" />
         <option value="$PROJECT_DIR$/src/main/java/bart/observer/model/WeatherDataDetails.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/bart/observer/model/DisplayDevice.java" />
         <option value="$PROJECT_DIR$/src/main/java/bart/observer/model/DisplayDeviceNamedImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/bart/observer/model/WeatherDataCoordinator.java" />
         <option value="$PROJECT_DIR$/src/test/java/bart/observer/model/WeatherDataCoordinatorTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/bart/observer/model/WeatherDataCoordinator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/bart/observer/model/DisplayDevice.java" />
       </list>
     </option>
   </component>
@@ -767,14 +758,14 @@
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37021717" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16546018" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Phing Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32988626" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3991727" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32995194" sideWeight="0.67011374" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934684" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32988626" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -782,7 +773,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24986653" sideWeight="0.62978286" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24986653" sideWeight="0.83453983" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32988626" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="JsTestDriver Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -816,7 +807,7 @@
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="-- Observer pattern - first test to ensure when we register an observer, it is indeed there and observing." />
+    <option name="LAST_COMMIT_MESSAGE" value="-- Observer pattern - setting new weather data on the coordinator now updates the vals on all of the observers. Test in place to support." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -834,6 +825,7 @@
     <MESSAGE value="-- Introduced strategy pattern for fly behavior. Also demonstrate runtime behavior change.&#10;" />
     <MESSAGE value="-- Strategy pattern - organized packages and added a couple of small comments&#10;" />
     <MESSAGE value="-- Observer pattern - first test to ensure when we register an observer, it is indeed there and observing." />
+    <MESSAGE value="-- Observer pattern - setting new weather data on the coordinator now updates the vals on all of the observers. Test in place to support." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -843,40 +835,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/bart/strategy/model/Duck.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="111" selection-start="661" selection-end="661" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hf/observer/weather/DisplayElement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="17" selection-start="78" selection-end="78" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bart/strategy/behavior/FlyBehavior.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="19" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bart/strategy/behavior/FlyWithARocket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="106" selection-start="266" selection-end="266" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bart/strategy/MiniDuckSimulator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="49" selection-start="1212" selection-end="1212" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bart/strategy/behavior/FlyRegular.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="50" selection-start="207" selection-end="207" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="21" selection-start="822" selection-end="822" vertical-scroll-proportion="0.0">
@@ -905,16 +863,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bart/observer/model/DisplayDevice.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/bart/observer/model/WeatherDataDetails.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="64" selection-start="221" selection-end="221" vertical-scroll-proportion="0.0">
+        <state line="16" column="0" selection-start="474" selection-end="474" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bart/observer/model/WeatherDataDetails.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/bart/observer/model/WeatherDataCoordinatorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="474" selection-end="474" vertical-scroll-proportion="0.0">
+        <state line="46" column="170" selection-start="2173" selection-end="2173" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hf/observer/weather/WeatherData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="39" selection-start="90" selection-end="90" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hf/observer/weather/StatisticsDisplay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="36" selection-start="249" selection-end="249" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hf/observer/weather/Subject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="17" selection-start="47" selection-end="47" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hf/observer/weather/Observer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="17" selection-start="47" selection-end="47" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/bin/java/jdk1.6.0_27/src.zip!/java/util/Observable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="13" selection-start="1870" selection-end="1870" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/bin/java/jdk1.6.0_27/src.zip!/java/util/Observer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="19" selection-start="436" selection-end="444" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -935,16 +935,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/bart/observer/model/WeatherDataCoordinator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="51" selection-start="1757" selection-end="1757" vertical-scroll-proportion="0.0">
+        <state line="10" column="28" selection-start="380" selection-end="380" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/bart/observer/model/WeatherDataCoordinatorTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/bart/observer/model/DisplayDevice.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="48" selection-start="2279" selection-end="2279" vertical-scroll-proportion="0.92558986">
+        <state line="10" column="1" selection-start="263" selection-end="263" vertical-scroll-proportion="0.22309712">
           <folding />
         </state>
       </provider>
