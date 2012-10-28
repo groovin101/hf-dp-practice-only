@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="04c8aab7-a1d1-4e09-9964-54d3cecb69fe" name="Default" comment="">
+    <list default="true" id="04c8aab7-a1d1-4e09-9964-54d3cecb69fe" name="Default" comment="-- Moved demo classes to base of pac">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/bart/decorator/Demo.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/bart/observer/exec/Demo.java" afterPath="$PROJECT_DIR$/src/main/java/bart/observer/exec/Demo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/bart/observer/model/DisplayDevice.java" afterPath="$PROJECT_DIR$/src/main/java/bart/observer/model/DisplayDevice.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/bart/observer/model/DisplayDeviceGeneric.java" afterPath="$PROJECT_DIR$/src/main/java/bart/observer/model/DisplayDeviceGeneric.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/bart/observer/model/WeatherDataCoordinator.java" afterPath="$PROJECT_DIR$/src/main/java/bart/observer/model/WeatherDataCoordinator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/bart/observer/model/WeatherDataCoordinatorTest.java" afterPath="$PROJECT_DIR$/src/test/java/bart/observer/model/WeatherDataCoordinatorTest.java" />
+      <change type="MOVED" beforePath="D:\home\bart\dev\headFirst\src\main\java\bart\observer\exec\Demo.java" afterPath="$PROJECT_DIR$/src/main/java/bart/observer/Demo.java" />
+      <change type="MOVED" beforePath="D:\home\bart\dev\headFirst\src\main\java\bart\strategy\MiniDuckSimulator.java" afterPath="$PROJECT_DIR$/src/main/java/bart/strategy/Demo.java" />
     </list>
     <ignored path="headFirst.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -85,9 +83,20 @@
         </entry>
       </file>
       <file leaf-file-name="Demo.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/bart/observer/exec/Demo.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/bart/observer/Demo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="40" selection-start="163" selection-end="163" vertical-scroll-proportion="0.0">
+            <state line="10" column="13" selection-start="241" selection-end="241" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Demo.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/bart/decorator/Demo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="82" selection-start="184" selection-end="184" vertical-scroll-proportion="0.20826952">
               <folding />
             </state>
           </provider>
@@ -129,10 +138,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WeatherDataCoordinator.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="WeatherDataCoordinator.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/bart/observer/model/WeatherDataCoordinator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="40" selection-start="403" selection-end="403" vertical-scroll-proportion="0.2863706">
+            <state line="11" column="40" selection-start="403" selection-end="403" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -142,15 +151,6 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/hf/observer/weatherobservable/CurrentConditionsDisplay.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="6" column="4" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Observer.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://D:/bin/java/jdk1.6.0_27/src.zip!/java/util/Observer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="0" selection-start="419" selection-end="419" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -170,8 +170,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/bart/strategy/behavior/FlyWithARocket.java" />
-        <option value="$PROJECT_DIR$/src/main/java/bart/strategy/MiniDuckSimulator.java" />
         <option value="$PROJECT_DIR$/src/main/java/bart/strategy/model/Duck.java" />
         <option value="$PROJECT_DIR$/src/test/java/bart/observer/model/WeatherDataTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/bart/observer/model/WeatherData.java" />
@@ -183,9 +181,11 @@
         <option value="$PROJECT_DIR$/src/main/java/bart/observer/model/WeatherDataDetails.java" />
         <option value="$PROJECT_DIR$/src/main/java/bart/observer/model/DisplayDevice.java" />
         <option value="$PROJECT_DIR$/src/main/java/bart/observer/model/DisplayDeviceGeneric.java" />
-        <option value="$PROJECT_DIR$/src/main/java/bart/observer/exec/Demo.java" />
         <option value="$PROJECT_DIR$/src/test/java/bart/observer/model/WeatherDataCoordinatorTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/bart/observer/model/WeatherDataCoordinator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/bart/observer/exec/Demo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/bart/observer/Demo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/bart/decorator/Demo.java" />
       </list>
     </option>
   </component>
@@ -405,38 +405,8 @@
               <option name="myItemId" value="bart" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="headFirstPatterns" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="headFirst" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bart" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="observer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
+              <option name="myItemId" value="strategy" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -469,8 +439,34 @@
               <option name="myItemId" value="observer" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="exec" />
+              <option name="myItemId" value="headFirstPatterns" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="headFirst" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bart" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="decorator" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -495,6 +491,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="bart.observer" />
       <recent name="bart" />
     </key>
   </component>
@@ -630,7 +627,7 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="bart.observer.exec.Demo" />
+      <option name="MAIN_CLASS_NAME" value="bart.Demo" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -826,7 +823,7 @@
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="-- Observer pattern - added a Demo class and a couple of Device (observer) implementations to demonstrate usage. Much refactoring. Final checkin before conversion to using the built-in java.util Observer/Observable apis." />
+    <option name="LAST_COMMIT_MESSAGE" value="-- Observer pattern - conversion to use the built-in java.util Observer/Observable apis." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -846,6 +843,7 @@
     <MESSAGE value="-- Observer pattern - first test to ensure when we register an observer, it is indeed there and observing." />
     <MESSAGE value="-- Observer pattern - setting new weather data on the coordinator now updates the vals on all of the observers. Test in place to support." />
     <MESSAGE value="-- Observer pattern - added a Demo class and a couple of Device (observer) implementations to demonstrate usage. Much refactoring. Final checkin before conversion to using the built-in java.util Observer/Observable apis." />
+    <MESSAGE value="-- Observer pattern - conversion to use the built-in java.util Observer/Observable apis." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -855,13 +853,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/hf/observer/weather/StatisticsDisplay.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="36" selection-start="249" selection-end="249" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hf/observer/weather/Subject.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="17" selection-start="47" selection-end="47" vertical-scroll-proportion="0.0">
@@ -939,13 +930,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bart/observer/exec/Demo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="40" selection-start="163" selection-end="163" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hf/observer/weatherobservable/CurrentConditionsDisplay.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="4" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0">
@@ -962,7 +946,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/bart/observer/model/WeatherDataCoordinator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="40" selection-start="403" selection-end="403" vertical-scroll-proportion="0.2863706">
+        <state line="11" column="40" selection-start="403" selection-end="403" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/bart/observer/Demo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="13" selection-start="241" selection-end="241" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/bart/decorator/Demo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="82" selection-start="184" selection-end="184" vertical-scroll-proportion="0.20826952">
           <folding />
         </state>
       </provider>

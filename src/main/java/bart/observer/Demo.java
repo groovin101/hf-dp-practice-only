@@ -1,4 +1,4 @@
-package bart.observer.exec;
+package bart.observer;
 
 import bart.observer.model.DisplayDeviceBlimp;
 import bart.observer.model.DisplayDevicePhone;

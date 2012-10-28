@@ -9,7 +9,7 @@ import bart.strategy.model.WoodenDuck;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MiniDuckSimulator {
+public class Demo {
 
     public static void main(String[] args) {
         List<Duck> allDucks = initDucks();
