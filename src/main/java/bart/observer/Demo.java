@@ -11,9 +11,12 @@ import bart.observer.model.WeatherDataDetails;
 public class Demo {
 
     public static void main(String[] args) {
+
         WeatherDataCoordinator dataCoordinator = new WeatherDataCoordinator();
+
         DisplayDeviceBlimp blimp = new DisplayDeviceBlimp("blimpikus");
         DisplayDevicePhone phone = new DisplayDevicePhone("phonikus");
+
         dataCoordinator.addObserver(blimp);
         dataCoordinator.addObserver(phone);
 

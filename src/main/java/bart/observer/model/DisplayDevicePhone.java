@@ -12,12 +12,12 @@ public class DisplayDevicePhone extends DisplayDeviceGeneric {
     @Override
     public void display() {
         System.out.println(getName() + " says : ");
-        System.out.println("Current temp is <tinyPhoneFont>" + buildTemperatureString() + "</tinyPhoneFont>");
+        System.out.println("<tinyPhoneFont>" + buildTemperatureString() + "</tinyPhoneFont>");
         System.out.println("------------");
     }
 
     private String buildTemperatureString() {
-        return weatherDataDetails == null ? "N/A" : new Double(weatherDataDetails.getTempCurrent()).toString();
+        return weatherDataDetails == null ? "Temp: not available Gabby McGabGab" : "Temp: " + new Double(weatherDataDetails.getTempCurrent()).toString();
     }
 
 }

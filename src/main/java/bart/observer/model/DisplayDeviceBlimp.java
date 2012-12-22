@@ -17,6 +17,6 @@ public class DisplayDeviceBlimp extends DisplayDeviceGeneric {
     }
 
     private String buildTemperatureString() {
-        return weatherDataDetails == null ? "Sorry people down there - no temp available" : new Double(weatherDataDetails.getTempCurrent()).toString();
+        return weatherDataDetails == null ? "Sorry people down there - no temp available" : "Hello down there! Temp is: " + new Double(weatherDataDetails.getTempCurrent()).toString();
     }
 }
