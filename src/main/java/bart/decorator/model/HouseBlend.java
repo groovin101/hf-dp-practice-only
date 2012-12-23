@@ -4,12 +4,9 @@ package bart.decorator.model;
  */
 public class HouseBlend extends Beverage {
 
-
-    public HouseBlend() {
-    }
-
+    @Override
     public double cost() {
-        return super.cost(.99);
+        return .99;
     }
 
 }

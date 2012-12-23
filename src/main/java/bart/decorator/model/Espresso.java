@@ -4,7 +4,8 @@ package bart.decorator.model;
  */
 public class Espresso extends Beverage {
 
+    @Override
     public double cost() {
-        return super.cost(1.99);
+        return 1.99;
     }
 }
