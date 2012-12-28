@@ -1,7 +1,7 @@
 package bart.factory;
 
-import bart.factory.factoryMethod.model.PizzaShopAnytownUsa;
 import bart.factory.factoryMethod.model.PizzaShopInChicago;
+import bart.factory.factoryMethod.model.PizzaShopInChicagoThatHasGoneRogue;
 import bart.factory.factoryMethod.model.PizzaShopUsingFactoryMethod;
 import bart.factory.simpleFactory.model.PizzaShop;
 import bart.factory.simpleFactory.model.PizzaSimpleFactoryChicagoStyleImpl;
@@ -23,23 +23,19 @@ public class Demo {
         System.out.println("\n*************************Demo-ing the factory method pattern\n");
 
         System.out.println("------------------------------------");
-        System.out.println("Heading to AnyTown....");
-        System.out.println("------------------------------------");
-
-        PizzaShopUsingFactoryMethod fmShopInAnytownUsa = new PizzaShopAnytownUsa();
-        fmShopInAnytownUsa.orderPizza(PizzaType.CHEESE);
-        System.out.println("  ------------------------------------");
-        fmShopInAnytownUsa.orderPizza(PizzaType.PEPPERONI);
-
-        System.out.println("------------------------------------");
         System.out.println("Heading to Chicago....");
         System.out.println("------------------------------------");
 
-
         PizzaShopUsingFactoryMethod fmShopInChicago = new PizzaShopInChicago();
         fmShopInChicago.orderPizza(PizzaType.CHEESE);
-        System.out.println("  ------------------------------------");
-        fmShopInChicago.orderPizza(PizzaType.PEPPERONI);
+
+        System.out.println("------------------------------------");
+        System.out.println("Heading to Chicago's bad part of town....");
+        System.out.println("------------------------------------");
+
+
+        PizzaShopUsingFactoryMethod nastyShopInChicago = new PizzaShopInChicagoThatHasGoneRogue();
+        nastyShopInChicago.orderPizza(PizzaType.CHEESE);
     }
 
     private static void demoSimpleFactoryPseudoPattern() {
