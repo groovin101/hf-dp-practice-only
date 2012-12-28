@@ -1,0 +1,99 @@
+----------------------------------
+Head First Design Patterns - Notes
+----------------------------------
+
+----------------------
+-------PATTERNS-------
+----------------------
+
+    DPSC = Design Patterns Smalltalk Companion
+
+********
+STRATEGY - behavioral
+********
+	My Words:
+		Encapsulate behavior in a separate object, useable by many client objects. An implementation strategy,
+		if you will, where the strategies conform to a single interface, allowing multiple like objects to
+		compose their behavior and _change_ their behavior as needed, be that at runtime or otherwise.
+
+	DPSC: Define a family of algorithms, encapsulate each one in a separate class, and define each class with the
+	same interface so that they can be interchangeable. Strategy lets the algorithm vary independently from the
+	clients that use it, runtime or otherwise.
+
+********
+OBSERVER - behavioral
+********
+	My Words:
+		Allow subscriber object(s) the ability to observe a subject by registering as an observer. Upon some
+		action or trigger, the subject notifies its subscribers. Normally the subject provides a way for
+		subscribers to unsubscribe as well.
+
+	DPSC:
+		Define a one-to-many dependency between objects so that when one object changes state, all its
+		dependents are notified and updated automatically.
+
+*********
+DECORATOR - structural
+*********
+	My Words:
+		Allows a component to be "wrapped" by other components implementing the same interface (or abstract
+		class), then delegating behavior to the composite objects as needed. A method(s) in question on the
+		wrapper (decorator) object will call to the component object it is wrapping (decorating), that one will
+		call to the one it is decorating, and so forth in cascading fashion. In this manner, the Decorator
+		object is able to inherit the behavior of the decorated objects without having to be a subclass. This
+		allows for flexible behavior modification through composition, giving a nice runtime benefit as well.
+
+	GOF:
+		Attached additional responsibilities to an object dynamically. Decorators provide a flexible alternative
+		to subclassing for extending functionality.
+
+**************
+FACTORY METHOD - creational
+**************
+	My Words:
+		Encapsulate object creation in a single method of a creator class. The creator class may inherit from
+		an abstract class that provides generic behavior tied to the interface of the products that are being
+		created. The factory method knows the details of said products.
+
+	GOF:
+		Define an interface for creating an object, but let subclasses decide which class to instantiate.
+		Factory Method lets a class defer instantiation to subclasses.
+
+	Addl Notes:
+		The Creator class is written without knowledge of the actual products that will be created, which is
+		decided purely by the choice of the subclass that is used. [HFDP 134]
+
+
+
+-------------------------------
+-------DESIGN PRINCIPLES-------
+-------------------------------
+
+Design Principle [?] [?]:
+
+	Identify the aspects of your application that vary and separate them from what stays the same. Ie, take what
+	varies and encapsulate it so that it won't affect the rest of your code.
+
+        Separate pieces that change often (requirements change) from those that don't. Encapsulate the the parts that
+        vary so that that we clater we can alter or extend the parts that vary without affecting those that don't.
+        This forms the basis for every design pattern. All patterns provide a way to let some part of a a system vary
+        independently of all other parts.
+
+Design Principle [the Open-Closed Principle] [86]:
+
+	Classes should be open for extension, but closed for modification.
+
+		Extend classes to add new behavior as new requirements arrive.
+		Do not modify a classes implementation if possible. By keeping things closes, we reduce regression risk.
+
+		Designs should be resilient to change and flexible enough to take on new functionality to meet changing
+		requirements.
+
+Design Principle [the Dependency Inversion Principle] [139]:
+
+	Depend upon abstractions. Do not depend upon concrete classes.
+
+        Similar to "program to an interface, not an implementation", but is a stronger statement to indicate that even
+        high level components using low level components should not depend on those low level components. Even those
+        high level components (classes whose behavior is defined in terms of other low level components) should depend
+        on abstractions.
