@@ -9,7 +9,7 @@ import bart.factory.simpleFactory.model.PizzaType;
  * This class violates the Dependency Inversion Principle because it is dependent on concrete low-level components (the
  * individual pizza implementations) rather than abstractions
  */
-public class PizzaShopAnytownUsa extends PizzaShopUsingFactoryMethod {
+public class PizzaShopAnytownUsa extends PizzaShop {
 
     @Override
     public Pizza createPizza(PizzaType type) {

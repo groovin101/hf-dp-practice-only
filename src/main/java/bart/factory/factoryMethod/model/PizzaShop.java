@@ -6,7 +6,7 @@ import bart.factory.simpleFactory.model.PizzaType;
 /**
  *
  */
-public abstract class PizzaShopUsingFactoryMethod {
+public abstract class PizzaShop {
 
     protected abstract Pizza createPizza(PizzaType type);
 

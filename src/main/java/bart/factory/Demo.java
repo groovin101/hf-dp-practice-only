@@ -1,9 +1,9 @@
 package bart.factory;
 
+import bart.factory.factoryMethod.model.PizzaShop;
 import bart.factory.factoryMethod.model.PizzaShopInChicago;
 import bart.factory.factoryMethod.model.PizzaShopInChicagoThatHasGoneRogue;
-import bart.factory.factoryMethod.model.PizzaShopUsingFactoryMethod;
-import bart.factory.simpleFactory.model.PizzaShop;
+import bart.factory.simpleFactory.model.PizzaShopUsingSimpleFactory;
 import bart.factory.simpleFactory.model.PizzaSimpleFactoryChicagoStyleImpl;
 import bart.factory.simpleFactory.model.PizzaSimpleFactoryRegularImpl;
 import bart.factory.simpleFactory.model.PizzaType;
@@ -26,7 +26,7 @@ public class Demo {
         System.out.println("Heading to Chicago....");
         System.out.println("------------------------------------");
 
-        PizzaShopUsingFactoryMethod fmShopInChicago = new PizzaShopInChicago();
+        PizzaShop fmShopInChicago = new PizzaShopInChicago();
         fmShopInChicago.orderPizza(PizzaType.CHEESE);
 
         System.out.println("------------------------------------");
@@ -34,7 +34,7 @@ public class Demo {
         System.out.println("------------------------------------");
 
 
-        PizzaShopUsingFactoryMethod nastyShopInChicago = new PizzaShopInChicagoThatHasGoneRogue();
+        PizzaShop nastyShopInChicago = new PizzaShopInChicagoThatHasGoneRogue();
         nastyShopInChicago.orderPizza(PizzaType.CHEESE);
     }
 
@@ -46,7 +46,7 @@ public class Demo {
         System.out.println("Heading to AnyTown....");
         System.out.println("------------------------------------");
 
-        PizzaShop bartsShop = new PizzaShop(new PizzaSimpleFactoryRegularImpl());
+        PizzaShopUsingSimpleFactory bartsShop = new PizzaShopUsingSimpleFactory(new PizzaSimpleFactoryRegularImpl());
         bartsShop.orderPizza(PizzaType.CHEESE);
         System.out.println("  ------------------------------------");
         bartsShop.orderPizza(PizzaType.PEPPERONI);
@@ -55,7 +55,7 @@ public class Demo {
         System.out.println("Heading to Chicago....");
         System.out.println("------------------------------------");
 
-        PizzaShop bartsShopInChicago = new PizzaShop(new PizzaSimpleFactoryChicagoStyleImpl());
+        PizzaShopUsingSimpleFactory bartsShopInChicago = new PizzaShopUsingSimpleFactory(new PizzaSimpleFactoryChicagoStyleImpl());
         bartsShopInChicago.orderPizza(PizzaType.CHEESE);
         System.out.println("  ------------------------------------");
         bartsShopInChicago.orderPizza(PizzaType.PEPPERONI);

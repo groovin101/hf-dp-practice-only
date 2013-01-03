@@ -5,7 +5,7 @@ import bart.factory.simpleFactory.model.PizzaType;
 
 /**
  */
-public class PizzaShopInChicagoThatHasGoneRogue extends PizzaShopUsingFactoryMethod {
+public class PizzaShopInChicagoThatHasGoneRogue extends PizzaShop {
 
     @Override
     protected Pizza createPizza(PizzaType type) {

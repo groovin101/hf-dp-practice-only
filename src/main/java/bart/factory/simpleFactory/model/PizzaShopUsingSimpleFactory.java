@@ -3,11 +3,11 @@ package bart.factory.simpleFactory.model;
 /**
  *
  */
-public class PizzaShop {
+public class PizzaShopUsingSimpleFactory {
 
     private PizzaSimpleFactory pizzaSimpleFactory;
 
-    public PizzaShop(PizzaSimpleFactory simpleFactory) {
+    public PizzaShopUsingSimpleFactory(PizzaSimpleFactory simpleFactory) {
         pizzaSimpleFactory = simpleFactory;
     }
 
