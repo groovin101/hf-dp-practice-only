@@ -2,5 +2,5 @@ package bart.factory.abstractFactory.model.ingredients;
 
 /**
  */
-public class DoughThickCrustImpl implements Dough {
+public class DoughThickCrustImpl extends DoughBase {
 }

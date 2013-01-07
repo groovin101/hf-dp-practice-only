@@ -1,5 +1,7 @@
 package bart.factory;
 
+import bart.factory.abstractFactory.model.PizzaShopInChicagoAF;
+import bart.factory.abstractFactory.model.PizzaShopInNewYorkAF;
 import bart.factory.factoryMethod.model.PizzaShop;
 import bart.factory.factoryMethod.model.PizzaShopInChicago;
 import bart.factory.factoryMethod.model.PizzaShopInChicagoThatHasGoneRogue;
@@ -14,8 +16,42 @@ import bart.factory.simpleFactory.model.PizzaType;
 public class Demo {
 
     public static void main(String[] args) {
-        demoSimpleFactoryPseudoPattern();
-        demoFactoryMethodPattern();
+//        demoSimpleFactoryPseudoPattern();
+//        demoFactoryMethodPattern();
+        demoAbstractFactoryPattern();
+    }
+
+    private static void demoAbstractFactoryPattern() {
+
+        PizzaShop chicagoShop = new PizzaShopInChicagoAF();
+        PizzaShop nycShop = new PizzaShopInNewYorkAF();
+
+        System.out.println("\n*************************Demo-ing the ABSTRACT FACTORY pattern\n");
+
+        System.out.println("------------------------------------");
+        System.out.println("Heading to Chicago to get a factory made cheese pizza....");
+        System.out.println("------------------------------------");
+
+        chicagoShop.orderPizza(PizzaType.CHEESE);
+
+        System.out.println("------------------------------------");
+        System.out.println("Heading to NYC to get a factory made cheese pizza....");
+        System.out.println("------------------------------------");
+
+
+        nycShop.orderPizza(PizzaType.CHEESE);
+
+        System.out.println("------------------------------------");
+        System.out.println("Heading to Chicago to get a factory made pepperoni pizza....");
+        System.out.println("------------------------------------");
+
+        chicagoShop.orderPizza(PizzaType.PEPPERONI);
+
+        System.out.println("------------------------------------");
+        System.out.println("Heading to NYC to get a factory made pepperoni pizza....");
+        System.out.println("------------------------------------");
+
+        nycShop.orderPizza(PizzaType.PEPPERONI);
     }
 
     private static void demoFactoryMethodPattern() {

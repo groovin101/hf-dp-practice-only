@@ -2,5 +2,5 @@ package bart.factory.abstractFactory.model.ingredients;
 
 /**
  */
-public class CheeseReggianoImpl implements Cheese {
+public class CheeseReggianoImpl extends CheeseBase {
 }

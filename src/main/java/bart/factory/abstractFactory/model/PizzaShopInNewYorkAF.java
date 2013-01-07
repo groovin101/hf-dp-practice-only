@@ -8,15 +8,15 @@ import bart.factory.simpleFactory.model.PizzaType;
 
 /**
  */
-public class PizzaShopInChicagoAF extends PizzaShop {
+public class PizzaShopInNewYorkAF extends PizzaShop {
 
     @Override
     protected Pizza createPizza(PizzaType type) {
         if (type.equals(PizzaType.CHEESE)) {
-            return (Pizza)new CheesePizzaAF(new PizzaIngredientFactoryChicago());
+            return (Pizza)new CheesePizzaAF(new PizzaIngredientFactoryNewYork());
         }
         else if (type.equals(PizzaType.PEPPERONI)) {
-            return (Pizza)new PepperoniPizzaAF(new PizzaIngredientFactoryChicago());
+            return (Pizza)new PepperoniPizzaAF(new PizzaIngredientFactoryNewYork());
         }
         throw new IllegalArgumentException("This shop only makes pepperoni or cheese pizzas");
     }
