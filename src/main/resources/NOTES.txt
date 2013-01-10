@@ -62,25 +62,46 @@ FACTORY METHOD - creational
 		The Creator class is written without knowledge of the actual products that will be created, which is 
 		decided purely by the choice of the subclass that is used. [HFDP 134]
 		
-		Relies on inheritance; object creation is delegated to subclasses which implement the factory method to create objects.
+		Relies on inheritance; object creation is delegated to subclasses which implement the factory method to create
+		objects.
 
 ****************
 ABSTRACT FACTORY - creational
 ****************
 	My Words:
-		Define an abstract factory that creates products, giving client code the ability to use a reference to a factory interface, while allowing us to define differing factory implementations that can produce variations of the factory products.
+		Define an abstract factory that creates products, giving client code the ability to use a reference to a factory
+		interface, while allowing us to define differing factory implementations that can produce variations of the
+		factory	products.
 		
-		Client code may reside in a different environment or context, meaning the factory being used can vary along with the variation in context. This allows us to return different kinds of products suitable for the environment we are in without having to change underlying client code directly.
+		Client code may reside in a different environment or context, meaning the factory being used can vary along with
+		the variation in context. This allows us to return different kinds of products suitable for the environment we
+		are in without having to change underlying client code directly.
 		
 	GOF:
-		Provides an interface for creating families of related or dependent objects without specifying their concrete classes.
+		Provides an interface for creating families of related or dependent objects without specifying their concrete
+		classes.
 		
 	Addl Notes:
-		It is important to remember that Abstract Factories are useful for creating _families of products_, whereas Factory Method is more useful when only creating a single object. 
+		It is important to remember that Abstract Factories are useful for creating _families of products_, whereas
+		Factory Method is more useful when only creating a single object.
 		Differing implementations for the Abstract Factories will create parallel sets of product families.
 		
 		Relies on object composition; object creation is implemented in methods exposed in the factory interface.
 
+*********
+SINGLETON - creational
+*********
+	My Words:
+	    Class that exists as a single, self-managed instance. Provides a globally accessible reference to the single
+	    instance, be that through a static accessor, global variable, what have you.
+
+    GOF:
+        Ensures a class has only one instance and provides a global point of access to it.
+
+    Addl Notes:
+        The singleton pattern could be a problem when using multiple classloaders. Because more than one version of the
+        class exists, more than one instance could be allowed to exist as well. A possible solution would be to specify
+        the classloader yourself [how?].
 
 ---------------------
 * DESIGN PRINCIPLES *
