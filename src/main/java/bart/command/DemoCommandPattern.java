@@ -19,6 +19,7 @@ public class DemoCommandPattern {
         tryButtonPressing();
         trySimpleUndoButton();
         tryComplexUndoButton();
+        tryMacroButton();
     }
 
     private static void tryButtonPressing() {
@@ -67,6 +68,36 @@ public class DemoCommandPattern {
         //turn on high
         rc.pressOnButton(2);
         //undo high (go back to medium)
+        rc.pressUndoButton();
+    }
+
+    private static void tryMacroButton() {
+
+        CeilingFan fan = new CeilingFan("party");
+        Light partyLight = new Light("party");
+        Stereo partyMusic = new Stereo("party");
+
+        Command[] commandsToExecuteForOnButton = new Command[3];
+        commandsToExecuteForOnButton[0] = new CommandCeilingFanMediumOn(fan);
+        commandsToExecuteForOnButton[1] = new CommandLightOn(partyLight);
+        commandsToExecuteForOnButton[2] = new CommandStereoCdOn(partyMusic);
+        CommandMacro macroToAssignToOnButton = new CommandMacro(commandsToExecuteForOnButton);
+
+        Command[] commandsToExecuteForOffButton = new Command[3];
+        commandsToExecuteForOffButton[0] = new CommandCeilingFanOff(fan);
+        commandsToExecuteForOffButton[1] = new CommandLightOff(partyLight);
+        commandsToExecuteForOffButton[2] =new CommandStereoCdOff(partyMusic);
+        CommandMacro macroToAssignToOffButton = new CommandMacro(commandsToExecuteForOffButton);
+
+        RemoteControl rc = new RemoteControl();
+        rc.setCommands(0, macroToAssignToOnButton, macroToAssignToOffButton);
+
+        rc.pressOnButton(0);
+        rc.pressOffButton(0);
+
+        System.out.println("----------");
+
+        rc.pressOnButton(0);
         rc.pressUndoButton();
     }
 
