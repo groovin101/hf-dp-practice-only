@@ -15,4 +15,8 @@ public class CommandGarageDoorOpen implements Command {
     public void execute() {
         receiver.up();
     }
+
+    public void undo() {
+        receiver.down();
+    }
 }

@@ -5,15 +5,18 @@ package bart.command.model;
  */
 public class RemoteControl {
 
+    private Command lastCommandExecuted;
+
     private Command[] onCommands;
     private Command[] offCommands;
 
     public RemoteControl() {
 
+        Command emptyCommand = new CommandEmpty();
+
+        lastCommandExecuted = emptyCommand;
         onCommands = new Command[7];
         offCommands = new Command[7];
-
-        Command emptyCommand = new CommandEmpty();
 
         for (int i=0; i<onCommands.length; i++) {
             onCommands[i] = emptyCommand;
@@ -36,11 +39,19 @@ public class RemoteControl {
     public void pressOnButton(int index) {
         System.out.println("> " + index + " ON: ");
         onCommands[index].execute();
+        lastCommandExecuted = onCommands[index];
     }
 
     public void pressOffButton(int index) {
         System.out.println("> " + index + " OFF: ");
         offCommands[index].execute();
+        lastCommandExecuted = offCommands[index];
+    }
+
+    public void pressUndoButton() {
+        System.out.println(" * UNDO * ");
+        lastCommandExecuted.undo();
+        System.out.println("\n");
     }
 
     @Override

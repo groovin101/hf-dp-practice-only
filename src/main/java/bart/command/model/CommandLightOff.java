@@ -15,4 +15,7 @@ public class CommandLightOff implements Command {
     public void execute() {
         receiver.off();
     }
+    public void undo() {
+        receiver.on();
+    }
 }

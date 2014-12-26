@@ -15,4 +15,8 @@ public class CommandStereoCdOff implements Command {
     public void execute() {
         receiver.off();
     }
+
+    public void undo() {
+        new CommandStereoCdOn(receiver).execute();
+    }
 }

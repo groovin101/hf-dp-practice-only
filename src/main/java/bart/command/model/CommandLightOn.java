@@ -15,4 +15,8 @@ public class CommandLightOn implements Command {
     public void execute() {
         receiver.on();
     }
+
+    public void undo() {
+        receiver.off();
+    }
 }

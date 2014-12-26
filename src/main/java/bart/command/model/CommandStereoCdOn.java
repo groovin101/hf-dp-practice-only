@@ -17,4 +17,8 @@ public class CommandStereoCdOn implements Command {
         receiver.setCD();
         receiver.setVolume(10);
     }
+
+    public void undo() {
+        new CommandStereoCdOff(receiver).execute();
+    }
 }
