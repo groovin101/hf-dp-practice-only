@@ -79,12 +79,12 @@ public class BeerVat {
      */
     public static synchronized BeerVat getInstance_usingTheDoubleCheckedLockingPattern() {
 
-        if (beerVatThatIsNotThreadSafe == null) {
+        if (beerVatCreatedViaDoubleCheckedLocking == null) {
             synchronized (BeerVat.class) {
                 beerVatCreatedViaDoubleCheckedLocking = new BeerVat();
             }
         }
-        return beerVatThatIsNotThreadSafe;
+        return beerVatCreatedViaDoubleCheckedLocking;
     }
 
     public void fill() {
