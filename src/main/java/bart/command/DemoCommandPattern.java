@@ -4,6 +4,7 @@ import bart.command.model.*;
 import hf.command.remote.GarageDoor;
 import hf.command.remote.Light;
 import hf.command.remote.Stereo;
+import hf.command.undo.CeilingFan;
 
 /**
  * The command pattern decouples the implementation of a command from the invoker, meaning the invoker does not have to
@@ -15,11 +16,12 @@ public class DemoCommandPattern {
 
     public static void main(String[] args) {
 
-//        exerciseButtonPressing();
-        exerciseUndoButton();
+        tryButtonPressing();
+        trySimpleUndoButton();
+        tryComplexUndoButton();
     }
 
-    private static void exerciseButtonPressing() {
+    private static void tryButtonPressing() {
 
         RemoteControl rc = assignCommandsToButtons();
         System.out.println(rc);
@@ -32,7 +34,7 @@ public class DemoCommandPattern {
         rc.pressOffButton(2);
     }
 
-    private static void exerciseUndoButton() {
+    private static void trySimpleUndoButton() {
 
         RemoteControl rc = assignCommandsToButtons();
         System.out.println(rc);
@@ -43,6 +45,28 @@ public class DemoCommandPattern {
 
         rc.pressOffButton(0);
         rc.pressOnButton(0);
+        rc.pressUndoButton();
+    }
+
+    private static void tryComplexUndoButton() {
+
+        RemoteControl rc = new RemoteControl();
+
+        CeilingFan fan = new CeilingFan("Kitchen");
+        rc.setCommands(0, new CommandCeilingFanLowOn(fan), new CommandCeilingFanOff(fan));
+        rc.setCommands(1, new CommandCeilingFanMediumOn(fan), new CommandCeilingFanOff(fan));
+        rc.setCommands(2, new CommandCeilingFanHighOn(fan), new CommandCeilingFanOff(fan));
+
+        //turn on med
+        rc.pressOnButton(1);
+        //turn off
+        rc.pressOffButton(1);
+        //undo off (go back to medium)
+        rc.pressUndoButton();
+
+        //turn on high
+        rc.pressOnButton(2);
+        //undo high (go back to medium)
         rc.pressUndoButton();
     }
 
