@@ -2,10 +2,21 @@
 Head First Design Patterns - Notes
 ----------------------------------
 
+    Strategy
+    Observer
+    Decorator
+    Factory, same as Factory Method?
+    Singleton
+    Command
+    Adapter
+    Facade
+    Template Method
+    Iterator
+    Composite
+    State
+    Proxy
+    Null Object
 
-------------
-* PATTERNS *
-------------
 
 ********
 STRATEGY - behavioral
@@ -102,6 +113,42 @@ SINGLETON - creational
         The singleton pattern could be a problem when using multiple classloaders. Because more than one version of the
         class exists, more than one instance could be allowed to exist as well. A possible solution would be to specify
         the classloader yourself [how?].
+
+*******
+COMMAND
+*******
+	My Words:
+		Allows an invoker to execute commands without having to know the implementation details of said commands. Keeps
+		caller and implementer decoupled. The command objects are themselves aware of their receiver, the object that
+		the command operates against.
+
+	HFDP:
+		Encapsulates a request as an object, thereby letting you parameterize clients with different requests, queue or
+		log requests, and support undoable operations.
+		
+	More Reading:
+		HFDP (228-230)
+		http://c2.com/cgi/wiki?CommandPattern
+
+	Addl Notes:
+	    Seems similar to passing methods as args, though the Command objects very well might have state.
+
+	When to Use:
+		Queue implementation
+		Undo
+		Repeatability of operations at later time
+		Ordered or structured execution of very different commands
+		
+***********
+NULL OBJECT
+***********
+	My Words:
+		Used to show intent, meaning we understand that null is the current state, but we don't want to have to check for it. We want to treat null as an equally expected state to the other 'regular' states.
+		
+		An example of this is when we used the CommandNotImplemented command in the remote control example of the command pattern. Rather than performing null checks on invocation, ensuring we didn't try to call execute on a null command, we instead initialized the buttons with "Null Objects" in the form of CommandNotImplemented instances.
+		
+	HFDP (214):
+		A "Null Object" is useful when you don't have a meaninfgul object to return, and yet you want to remove the responsibility for handling null from the client. For instance, in our remote control, we didn't have a meaningful object to assign to each slot out of the box, so we provided a NoCommand object that acts as a surrogate and does nothing when its execute method is called.
 
 ---------------------
 * DESIGN PRINCIPLES *
