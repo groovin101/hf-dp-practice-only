@@ -30,5 +30,7 @@ public class Demo {
 //        System.out.println(" With mocha and soy?");
 //        espresso.addCondiment(new SoyDecorator());
 //        System.out.println(" " + espresso.cost());
+
+// todo: remove - this commented out line was added to test git commit behavior over vpn
     }
 }
