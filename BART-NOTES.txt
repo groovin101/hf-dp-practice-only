@@ -59,6 +59,9 @@ DECORATOR - structural
 		to subclassing for extending functionality.
 
 	Addl Notes:
+        A decorator wraps an object to add new behaviors and responsibilities
+        An adapter wraps an object to change its interface
+        A facade wraps a set of objects to simplify
 
     More Reading:
         HFDP (252) - adapter pattern vs decorator pattern
@@ -166,9 +169,13 @@ NULL OBJECT
 ADAPTER
 *******
 	My Words:
+	    Provide a compatible interface to interact with, an overlay if you will, akin to adapting a 3 prong plug to a
+	    2 prong interface.
 
     HFDP:
-        Alter an interface so that it matches one a client is expecting.
+        Converts the interface of a class into another interface the clients expect. Adapter lets classes work together
+        that couldn't otherwise because of incompatible interfaces.
+        Intent: alter an interface so that it matches one a client is expecting.
 
     More Reading:
         HFDP (252) - adapter pattern vs decorator pattern
@@ -178,9 +185,19 @@ ADAPTER
 FACADE
 ******
 	My Words:
+	    Simplify interaction with multiple interfaces by building a Facade that does the interaction for you, allowing
+	    clients to be oblivious to the complexity of the underlying subsystem. This sounds like what I did with dingle-
+	    dorf's web service impl at work, giving it a reasonable interface to interact with.
 
     HFDP:
-        Provide a simplified interface to a subsytem.
+        Provides a unified interface to a set of interfaces in a subsystem. Facade defines a higher level interface that
+        makes the subsystem easier to use.
+        Intent: provide a simplified interface to a subsytem.
+
+	When to Use:
+        Too many interfaces to interact with
+        Unwieldy subsystems
+        HFDP (270)
 
     More Reading:
         HFDP (260) - adapter pattern vs facade pattern
@@ -221,9 +238,9 @@ Dependency Inversion Principle [139]
 	high level components using low level components should not depend on those low level components. Even those
 	high level components should depend on abstractions.
 	
-****************************
-Principle of Least Knowledge [265]
-****************************
+****************************     ********************
+Principle of Least Knowledge AKA *The Law of Demeter* [265]
+****************************     ********************
     Talk only to your immediate friends.
 
     Keep the amount of classes that your classes interact with to a minimum. Reduce coupling. The less interaction with
