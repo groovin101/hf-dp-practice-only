@@ -8,14 +8,15 @@ Head First Design Patterns - Notes
     Factory, same as Factory Method?
     Singleton
     Command
+    Null Object
     Adapter
     Facade
+
     Template Method
     Iterator
     Composite
     State
     Proxy
-    Null Object
 
 
 ********
@@ -54,9 +55,14 @@ DECORATOR - structural
 		allows for flexible behavior modification through composition, giving a nice runtime benefit as well.
 	
 	GOF:
-		Attached additional responsibilities to an object dynamically. Decorators provide a flexible alternative
+		Attached *additional responsibilities* to an object dynamically. Decorators provide a flexible alternative
 		to subclassing for extending functionality.
-		
+
+	Addl Notes:
+
+    More Reading:
+        HFDP (252) - adapter pattern vs decorator pattern
+
 **************
 FACTORY METHOD - creational
 **************
@@ -126,10 +132,6 @@ COMMAND
 		Encapsulates a request as an object, thereby letting you parameterize clients with different requests, queue or
 		log requests, and support undoable operations.
 		
-	More Reading:
-		HFDP (228-230)
-		http://c2.com/cgi/wiki?CommandPattern
-
 	Addl Notes:
 	    Seems similar to passing methods as args, though the Command objects very well might have state.
 
@@ -139,16 +141,49 @@ COMMAND
 		Repeatability of operations at later time
 		Ordered or structured execution of very different commands
 		
+	More Reading:
+		HFDP (228-230)
+		http://c2.com/cgi/wiki?CommandPattern
+
 ***********
 NULL OBJECT
 ***********
 	My Words:
-		Used to show intent, meaning we understand that null is the current state, but we don't want to have to check for it. We want to treat null as an equally expected state to the other 'regular' states.
+		Used to show intent, meaning we understand that null is the current state, but we don't want to have to check
+		for it. We want to treat null as an equally expected state to the other 'regular' states.
 		
-		An example of this is when we used the CommandNotImplemented command in the remote control example of the command pattern. Rather than performing null checks on invocation, ensuring we didn't try to call execute on a null command, we instead initialized the buttons with "Null Objects" in the form of CommandNotImplemented instances.
+		An example of this is when we used the CommandNotImplemented command in the remote control example of the
+		command pattern. Rather than performing null checks on invocation, ensuring we didn't try to call execute on a
+		null command, we instead initialized the buttons with "Null Objects" in the form of CommandNotImplemented instances.
 		
 	HFDP (214):
-		A "Null Object" is useful when you don't have a meaninfgul object to return, and yet you want to remove the responsibility for handling null from the client. For instance, in our remote control, we didn't have a meaningful object to assign to each slot out of the box, so we provided a NoCommand object that acts as a surrogate and does nothing when its execute method is called.
+		A "Null Object" is useful when you don't have a meaninfgul object to return, and yet you want to remove the
+		responsibility for handling null from the client. For instance, in our remote control, we didn't have a
+		meaningful object to assign to each slot out of the box, so we provided a NoCommand object that acts as a
+		surrogate and does nothing when its execute method is called.
+
+*******
+ADAPTER
+*******
+	My Words:
+
+    HFDP:
+        Alter an interface so that it matches one a client is expecting.
+
+    More Reading:
+        HFDP (252) - adapter pattern vs decorator pattern
+        HFDP (260) - adapter pattern vs facade pattern
+
+******
+FACADE
+******
+	My Words:
+
+    HFDP:
+        Provide a simplified interface to a subsytem.
+
+    More Reading:
+        HFDP (260) - adapter pattern vs facade pattern
 
 ---------------------
 * DESIGN PRINCIPLES *
@@ -171,11 +206,11 @@ Open-Closed Principle [86]
 *********************
 	Classes should be open for extension, but closed for modification.
 		
-		Extend classes to add new behavior as new requirements arrive.
-		Do not modify a classes implementation if possible. By keeping things closes, we reduce regression risk.
+	Extend classes to add new behavior as new requirements arrive.
+	Do not modify a classes implementation if possible. By keeping things closes, we reduce regression risk.
 		
-		Designs should be resilient to change and flexible enough to take on new functionality to meet changing 
-		requirements.
+	Designs should be resilient to change and flexible enough to take on new functionality to meet changing
+	requirements.
 		
 ******************************
 Dependency Inversion Principle [139]
@@ -186,6 +221,27 @@ Dependency Inversion Principle [139]
 	high level components using low level components should not depend on those low level components. Even those
 	high level components should depend on abstractions.
 	
+****************************
+Principle of Least Knowledge [265]
+****************************
+    Talk only to your immediate friends.
+
+    Keep the amount of classes that your classes interact with to a minimum. Reduce coupling. The less interaction with
+    other classes, the lower the risk of maintenance issues resulting from changes to collaborators. For example, we
+    don't want to call:
+
+        getCar().getEngine().putGasIn(jugOfGasoline)
+
+    That exposes an implementation detail about the Car object, the Engine. Maybe that Engine interface changes down the
+    road and the engine doesn't take gas anymore. Maybe we need to convert the gas to electric before we fuel the engine
+    rather than adding the gas directly. If we let the Car object handle it itself, then we only need to change the way
+    the engine is interacted with in one place, in the Car implementation. We should interact with the Car object directly
+    and let _it_ be the one to handle details about Engine interaction.
+
+        getCar.addFuel(jugOfGasoline);
+
+
+
 
 ----------------
 * Random Notes *
