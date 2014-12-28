@@ -1,5 +1,5 @@
 ----------------------------------
-Head First Design Patterns - Notes
+Head First Design Patterns - Notes X
 ----------------------------------
 
     Strategy
