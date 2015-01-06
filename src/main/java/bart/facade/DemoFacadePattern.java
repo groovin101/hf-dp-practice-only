@@ -19,7 +19,8 @@ public class DemoFacadePattern {
 
     private static void init() {
         Amplifier theAmp = new Amplifier("The amp");
-        facade = new FacadeForMovieWatching(theAmp, new DvdPlayer("Dvd playa", theAmp),
+        DvdPlayer dvdPlayer = new DvdPlayer("Dvd playa", theAmp);
+        facade = new FacadeForMovieWatching(theAmp, dvdPlayer,
                 new PopcornPopper("Best damn popcorn popper in town"), new TheaterLights("Magic lights"),
                 new Screen("Fancy view screen"));
     }

@@ -12,6 +12,7 @@ import java.util.List;
 public class Demo {
 
     public static void main(String[] args) {
+
         List<Duck> allDucks = initDucks();
         for (Duck duck : allDucks) {
             System.out.println("------------------------");
@@ -29,6 +30,7 @@ public class Demo {
     }
 
     private static List<Duck> initDucks() {
+
         List<Duck> ducks = new ArrayList<Duck>();
         MallardDuck mallard = new MallardDuck();
         RedheadDuck redheadDuck = new RedheadDuck();
