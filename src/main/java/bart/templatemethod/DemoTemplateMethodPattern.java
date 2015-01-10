@@ -9,7 +9,7 @@ import bart.templatemethod.model.Tea;
  * The Template Method pattern shows us how we can define a common template for an algorithm, allowing the algorithm
  * implementation details to differ while preserving the steps of the template.
  */
-public class TemplateMethodPattern {
+public class DemoTemplateMethodPattern {
 
     private static Dox logger = new Dox();
 

@@ -26,7 +26,8 @@ public abstract class CaffeinatedBeverage {
     }
 
     /**
-     * This is also a template method, but it provides a hook for the client to override, if they wish; they don't have to.
+     * This is also a template method, but it provides a hook (customerWantsCondiments()) for the client to override if they wish; they don't have to since we
+     * provide a default implementation.
      */
     public final void prepareBeverageUsingACommonTemplateWithAHook() {
         boilWater();

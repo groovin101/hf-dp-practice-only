@@ -8,7 +8,7 @@ import bart.observer.model.WeatherDataDetails;
 /**
  *
  */
-public class Demo {
+public class DemoObserverPattern {
 
     public static void main(String[] args) {
 

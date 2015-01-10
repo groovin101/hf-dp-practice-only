@@ -202,6 +202,26 @@ FACADE
     More Reading:
         HFDP (260) - adapter pattern vs facade pattern
 
+***************
+TEMPLATE METHOD
+***************
+	My Words:
+	    Define an algorithm, ie defined steps, and then let subclasses implement some of the steps. Optionally provide
+	    hooks that subclasses can override. Implemented as an abstract class where some of the steps are outlined with
+	    default behavior.
+
+    HFDP:
+    	Defines the skeleton of an algorithm in a method, deferring some steps to subclasses. Template Method lets
+    	subclasses redefine certain steps of an algorithm without changing the algorithm's structure.
+        Intent: create a template for an algorithm.
+
+	Addl Notes:
+		Use an abstract method when subclasses _must_ implement a step of an algorithm and use a hook when the step or behavior is optional.
+
+	When to Use:
+		(a hook)	- give the subclass a chance to react to a step in the template method that has or is about to happen
+					- allow the subclass to make a decision for the abstract class
+
 ---------------------
 * DESIGN PRINCIPLES *
 ---------------------
@@ -213,7 +233,7 @@ Design Principle x
 	Identify the aspects of your application that vary and separate them from what stays the same. Ie, take what 
 	varies and encapsulate it so that it won't affect the rest of your code.
 
-	Separate pieces that change often (requirements change) from those that don't. Encapsulate the the parts that 
+	Separate pieces that change often (requirements change) from those that don't. Encapsulate the parts that
 	vary so that that we clater we can alter or extend the parts that vary without affecting those that don't. 
 	This forms the basis for every design pattern. All patterns provide a way to let some part of a a system vary 
 	independently of all other parts.
@@ -257,8 +277,18 @@ Principle of Least Knowledge AKA *The Law of Demeter* [265]
 
         getCar.addFuel(jugOfGasoline);
 
+*************************
+Hollywood Principle [296]
+*************************
+	Don't call us, we'll call you.
 
+	The intent of this principle is to avoid dependency rot, where high level components depend on low level components
+	that depend on sideways components. Gets crazy.
 
+	This principle affords low level components the ability to provide implementations, hooking into a system, while high
+	level components dictate when and how those lower level components are used (we'll call you pal).
+
+	Used in the Template Method pattern, Factory Method, Observer...
 
 ----------------
 * Random Notes *

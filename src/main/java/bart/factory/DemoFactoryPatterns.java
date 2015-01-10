@@ -13,7 +13,7 @@ import bart.factory.simpleFactory.model.PizzaType;
 /**
  *
  */
-public class Demo {
+public class DemoFactoryPatterns {
 
     public static void main(String[] args) {
         demoSimpleFactoryPseudoPattern();
