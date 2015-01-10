@@ -1,10 +1,11 @@
 package bart.facade;
 
 import bart.Dox;
+import bart.facade.model.FacadeForMovieWatching;
 import hf.facade.hometheater.*;
 
 /**
- * @see FacadeForMovieWatching
+ * @see bart.facade.model.FacadeForMovieWatching
  */
 public class DemoFacadePattern {
 

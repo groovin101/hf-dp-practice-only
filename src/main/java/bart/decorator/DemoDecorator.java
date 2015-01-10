@@ -7,7 +7,7 @@ import bart.decorator.model.SoyDecorator;
 /**
  *
  */
-public class Demo {
+public class DemoDecorator {
 
     public static void main(String[] args) {
 

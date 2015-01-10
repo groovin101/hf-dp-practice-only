@@ -16,8 +16,8 @@ import bart.factory.simpleFactory.model.PizzaType;
 public class Demo {
 
     public static void main(String[] args) {
-//        demoSimpleFactoryPseudoPattern();
-//        demoFactoryMethodPattern();
+        demoSimpleFactoryPseudoPattern();
+        demoFactoryMethodPattern();
         demoAbstractFactoryPattern();
     }
 
@@ -54,6 +54,9 @@ public class Demo {
         nycShop.orderPizza(PizzaType.PEPPERONI);
     }
 
+    /**
+     * @see PizzaShop
+     */
     private static void demoFactoryMethodPattern() {
 
         System.out.println("\n*************************Demo-ing the factory method pattern\n");

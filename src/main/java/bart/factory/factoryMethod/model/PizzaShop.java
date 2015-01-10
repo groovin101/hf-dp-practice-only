@@ -18,7 +18,7 @@ public abstract class PizzaShop {
      * @param type
      * @return
      */
-    protected abstract Pizza createPizza(PizzaType type);
+    protected abstract Pizza createPizza(PizzaType type); //factory method to churn out new pizzas for use
 
     public Pizza orderPizza(PizzaType type) {
 

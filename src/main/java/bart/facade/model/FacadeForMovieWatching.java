@@ -1,4 +1,4 @@
-package bart.facade;
+package bart.facade.model;
 
 import hf.facade.hometheater.*;
 

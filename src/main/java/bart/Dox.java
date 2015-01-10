@@ -21,4 +21,8 @@ public class Dox {
     public void out(String lineToPrint) {
         System.out.println(lineToPrint);
     }
+
+    public void blankLine() {
+        System.out.println("");
+    }
 }
